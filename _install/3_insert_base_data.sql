@@ -9,6 +9,6 @@ INSERT INTO `skipthebs`.`section_type` (`id`, `name`) VALUES ('1', 'advertisemen
 INSERT INTO `skipthebs`.`section_type` (`id`, `name`) VALUES ('2', 'intro');
 
 /* Finally, insert where the ad begins and stops */
-INSERT INTO `skipthebs`.`section` (`id`, `video_id`, `start`, `stop`, `section_type_id`) VALUES (NULL, '1', '00:00:42', '00:00:52', '1');
-INSERT INTO `skipthebs`.`section` (`id`, `video_id`, `start`, `stop`, `section_type_id`) VALUES (NULL, '1', '00:08:09', '00:09:31', '1');
-INSERT INTO `skipthebs`.`section` (`id`, `video_id`, `start`, `stop`, `section_type_id`) VALUES (NULL, '1', '00:00:33', '00:00:41', '2');
+INSERT INTO `skipthebs`.`section` (`id`, `video_id`, `start`, `stop`, `section_type_id`) VALUES (NULL, '1', '42.0', '52.0', '1');
+INSERT INTO `skipthebs`.`section` (`id`, `video_id`, `start`, `stop`, `section_type_id`) VALUES (NULL, '1', '489.0', '571.0', '1');
+INSERT INTO `skipthebs`.`section` (`id`, `video_id`, `start`, `stop`, `section_type_id`) VALUES (NULL, '1', '33.0', '41.0', '2');

@@ -1,11 +1,23 @@
 <?php
 
-define('STRIP_GET_TAGS', TRUE);
+/**
+ * MySQL Database information and credidentials
+ */
+define('DB_HOST', 'localhost'); // Server on which the database is being hosted
+define('DB_NAME', 'skipthebs'); // Database name
+define('DB_USER', 'root'); // Database username
+define('DB_PASS', ''); // Database password
 
 /**
  * Document root
+ * Depending on your webserver directory structure this probably needs to be changed
  */
-define('DOC_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/SkipTheBS-Server');
+define('DOC_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/git/SkipTheBS-Server');
+
+/**
+ * Strip tags from _GET
+ */
+define('STRIP_GET_TAGS', TRUE);
 
 /**
  * GET defines
@@ -29,14 +41,5 @@ define('SUBMIT_PLATFORM',			'platform');
 
 define('DEFAULT_SECTION_TYPE', 'advertisement');
 define('DEFAULT_PLATFORM', 'YouTube');
-
-
-/**
- * Database information and credidentials
- */
-define('DB_HOST', 'localhost'); // Server on which the database is being hosted
-define('DB_NAME', 'skipthebs'); // Database name
-define('DB_USER', 'root'); // Database username
-define('DB_PASS', ''); // Database password
 
 ?>

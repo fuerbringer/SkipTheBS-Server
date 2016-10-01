@@ -56,8 +56,8 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 CREATE TABLE IF NOT EXISTS `section` (
 `id` int(11) NOT NULL,
   `video_id` int(11) NOT NULL, /* The video in question */
-  `start` time NOT NULL, /* Start time of the ad/intro */
-  `stop` time NOT NULL, /* End time of the ad/intro */
+  `start` float NOT NULL, /* Start time of the ad/intro */
+  `stop` float NOT NULL, /* End time of the ad/intro */
   `section_type_id` int(11) NOT NULL, /* What type of section this is (ad, intro) */
   `user_id` int(11) DEFAULT NULL /* Note: this is NULL in case the user submits via Captcha */
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;

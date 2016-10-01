@@ -100,6 +100,7 @@ class Submit {
 		// Check if times are valid
 		if(!isValidTime($this->start)) $status['errors'][] = 'Start time is invalid';
 		if(!isValidTime($this->stop)) $status['errors'][] = 'End time is invalid';
+		if(floatval($this->start) > floatval($this->stop)) $status['errors'][] = 'Start can\'t be bigger than stop.';
 		if(!strlen($this->video_code)) $status['errors'][] = 'Empty video code';
 
 		if(count($status['errors']) < 1) {

@@ -6,7 +6,6 @@ if(STRIP_GET_TAGS) {
 		$param = strip_tags($param);
 	}
 }
-
 if(isset($_GET[IS_REQUEST])) {
 	// Client is beginning a request for a video and its sections
 	$response = new Response($_GET[VIDEO_CODE], $_GET[REQUEST_SECTION_TYPES]);

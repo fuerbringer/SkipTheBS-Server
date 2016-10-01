@@ -7,7 +7,6 @@ include DOC_ROOT . '/application/include/class/response.php';
 include DOC_ROOT . '/application/include/class/submit.php';
 include DOC_ROOT . '/application/api.php';
 
-
 /**
  *
  * Example call to request data:
